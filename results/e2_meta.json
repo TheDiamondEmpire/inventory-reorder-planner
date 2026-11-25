@@ -1,0 +1,61 @@
+{
+  "arms": [
+    [
+      "sQ",
+      "cycle"
+    ],
+    [
+      "sS",
+      "cycle"
+    ],
+    [
+      "periodic",
+      "cycle"
+    ],
+    [
+      "sQ",
+      "fill"
+    ]
+  ],
+  "burn_in_days": 56,
+  "cpu_load_pct_at_start": 62.0,
+  "experiment": "e2",
+  "implementation": "CPython",
+  "irp_version": "0.1.0",
+  "item": {
+    "forecast_method": "auto",
+    "holding_rate": 0.25,
+    "lead_time_days": 14.0,
+    "lead_time_sd_days": 4.0,
+    "moq": 1,
+    "order_cost": 20.0,
+    "pack_size": 1,
+    "period_days": 7,
+    "unit_cost": 10.0,
+    "unit_price": 16.0
+  },
+  "logical_cpus": 8,
+  "machine": "AMD64",
+  "measured_days": 365,
+  "patterns": [
+    "smooth",
+    "seasonal",
+    "trending",
+    "intermittent",
+    "lumpy"
+  ],
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.13",
+  "replan_days": 28,
+  "review_days": 7,
+  "runs": 1800,
+  "seeds": 30,
+  "started_utc": "2026-11-24T20:28:14Z",
+  "targets": [
+    0.9,
+    0.95,
+    0.99
+  ],
+  "wall_seconds": 22.9,
+  "warmup_days": 364
+}

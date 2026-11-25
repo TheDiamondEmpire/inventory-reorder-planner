@@ -1,0 +1,307 @@
+subject,check,ok,detail
+product,c01_ppf_published_constants,True,max abs error 7.99e-15
+product,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+product,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+product,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+product,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0056
+product,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+product,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+product,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+product,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+product,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+product,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+product,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+product,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+product,c11_croston_vs_definition,True,max abs difference 2.22e-15
+product,c12_reorder_point_composition,True,max relative difference 1.05e-15
+product,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+product,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+ss_ignores_lead_time_variance,c01_ppf_published_constants,True,max abs error 7.99e-15
+ss_ignores_lead_time_variance,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+ss_ignores_lead_time_variance,c03_lead_time_sd_vs_monte_carlo,False,worst relative error 0.6454 over 24 cases
+ss_ignores_lead_time_variance,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+ss_ignores_lead_time_variance,c04b_cycle_service_vs_monte_carlo_random_lead_time,False,36 of 36 outside 0.01; worst |achieved - target| = 0.2267
+ss_ignores_lead_time_variance,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+ss_ignores_lead_time_variance,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+ss_ignores_lead_time_variance,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+ss_ignores_lead_time_variance,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+ss_ignores_lead_time_variance,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+ss_ignores_lead_time_variance,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+ss_ignores_lead_time_variance,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+ss_ignores_lead_time_variance,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+ss_ignores_lead_time_variance,c11_croston_vs_definition,True,max abs difference 2.22e-15
+ss_ignores_lead_time_variance,c12_reorder_point_composition,True,max relative difference 1.05e-15
+ss_ignores_lead_time_variance,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+ss_ignores_lead_time_variance,c14_safety_stock_monotonicity,False,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+ss_sigma_times_L,c01_ppf_published_constants,True,max abs error 7.99e-15
+ss_sigma_times_L,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+ss_sigma_times_L,c03_lead_time_sd_vs_monte_carlo,False,worst relative error 3.5886 over 24 cases
+ss_sigma_times_L,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,False,"36 of 36 (case, level) pairs outside 4 standard errors; worst deviation 33.52x tolerance"
+ss_sigma_times_L,c04b_cycle_service_vs_monte_carlo_random_lead_time,False,27 of 36 outside 0.01; worst |achieved - target| = 0.1000
+ss_sigma_times_L,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+ss_sigma_times_L,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+ss_sigma_times_L,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+ss_sigma_times_L,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+ss_sigma_times_L,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+ss_sigma_times_L,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+ss_sigma_times_L,c09_exact_poisson_where_normal_is_adequate,False,worst |exact service level - target| = 0.1000 for lambda*L >= 50 (limit 0.03)
+ss_sigma_times_L,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+ss_sigma_times_L,c11_croston_vs_definition,True,max abs difference 2.22e-15
+ss_sigma_times_L,c12_reorder_point_composition,True,max relative difference 1.05e-15
+ss_sigma_times_L,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+ss_sigma_times_L,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+ss_adds_instead_of_quadrature,c01_ppf_published_constants,True,max abs error 7.99e-15
+ss_adds_instead_of_quadrature,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+ss_adds_instead_of_quadrature,c03_lead_time_sd_vs_monte_carlo,False,worst relative error 0.4158 over 24 cases
+ss_adds_instead_of_quadrature,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+ss_adds_instead_of_quadrature,c04b_cycle_service_vs_monte_carlo_random_lead_time,False,24 of 36 outside 0.01; worst |achieved - target| = 0.0616
+ss_adds_instead_of_quadrature,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+ss_adds_instead_of_quadrature,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+ss_adds_instead_of_quadrature,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+ss_adds_instead_of_quadrature,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+ss_adds_instead_of_quadrature,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+ss_adds_instead_of_quadrature,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+ss_adds_instead_of_quadrature,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+ss_adds_instead_of_quadrature,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+ss_adds_instead_of_quadrature,c11_croston_vs_definition,True,max abs difference 2.22e-15
+ss_adds_instead_of_quadrature,c12_reorder_point_composition,True,max relative difference 1.05e-15
+ss_adds_instead_of_quadrature,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+ss_adds_instead_of_quadrature,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+ss_wrong_tail,c01_ppf_published_constants,True,max abs error 7.99e-15
+ss_wrong_tail,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+ss_wrong_tail,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+ss_wrong_tail,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,False,"36 of 36 (case, level) pairs outside 4 standard errors; worst deviation 823.79x tolerance"
+ss_wrong_tail,c04b_cycle_service_vs_monte_carlo_random_lead_time,False,36 of 36 outside 0.01; worst |achieved - target| = 0.9845
+ss_wrong_tail,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+ss_wrong_tail,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+ss_wrong_tail,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+ss_wrong_tail,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+ss_wrong_tail,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+ss_wrong_tail,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+ss_wrong_tail,c09_exact_poisson_where_normal_is_adequate,False,worst |exact service level - target| = 0.9804 for lambda*L >= 50 (limit 0.03)
+ss_wrong_tail,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+ss_wrong_tail,c11_croston_vs_definition,True,max abs difference 2.22e-15
+ss_wrong_tail,c12_reorder_point_composition,True,max relative difference 1.05e-15
+ss_wrong_tail,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+ss_wrong_tail,c14_safety_stock_monotonicity,False,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+ss_z_rounded_to_one_decimal,c01_ppf_published_constants,True,max abs error 7.99e-15
+ss_z_rounded_to_one_decimal,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+ss_z_rounded_to_one_decimal,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+ss_z_rounded_to_one_decimal,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,False,"21 of 36 (case, level) pairs outside 4 standard errors; worst deviation 2.50x tolerance"
+ss_z_rounded_to_one_decimal,c04b_cycle_service_vs_monte_carlo_random_lead_time,False,1 of 36 outside 0.01; worst |achieved - target| = 0.0102
+ss_z_rounded_to_one_decimal,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+ss_z_rounded_to_one_decimal,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+ss_z_rounded_to_one_decimal,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+ss_z_rounded_to_one_decimal,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+ss_z_rounded_to_one_decimal,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+ss_z_rounded_to_one_decimal,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+ss_z_rounded_to_one_decimal,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+ss_z_rounded_to_one_decimal,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+ss_z_rounded_to_one_decimal,c11_croston_vs_definition,True,max abs difference 2.22e-15
+ss_z_rounded_to_one_decimal,c12_reorder_point_composition,True,max relative difference 1.05e-15
+ss_z_rounded_to_one_decimal,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+ss_z_rounded_to_one_decimal,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+ppf_logistic_approximation,c01_ppf_published_constants,False,max abs error 9.68e-01
+ppf_logistic_approximation,c02_ppf_round_trip,False,max |cdf(ppf(p)) - p| = 9.30e-03
+ppf_logistic_approximation,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+ppf_logistic_approximation,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,False,"24 of 36 (case, level) pairs outside 4 standard errors; worst deviation 5.61x tolerance"
+ppf_logistic_approximation,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0067
+ppf_logistic_approximation,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+ppf_logistic_approximation,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+ppf_logistic_approximation,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+ppf_logistic_approximation,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+ppf_logistic_approximation,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+ppf_logistic_approximation,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+ppf_logistic_approximation,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+ppf_logistic_approximation,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+ppf_logistic_approximation,c11_croston_vs_definition,True,max abs difference 2.22e-15
+ppf_logistic_approximation,c12_reorder_point_composition,True,max relative difference 1.05e-15
+ppf_logistic_approximation,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+ppf_logistic_approximation,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+eoq_missing_factor_2,c01_ppf_published_constants,True,max abs error 7.99e-15
+eoq_missing_factor_2,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+eoq_missing_factor_2,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+eoq_missing_factor_2,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+eoq_missing_factor_2,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0056
+eoq_missing_factor_2,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+eoq_missing_factor_2,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+eoq_missing_factor_2,c07_eoq_vs_brute_force_search,False,30 of 30 random cases more than 1 unit from the brute-force optimum
+eoq_missing_factor_2,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+eoq_missing_factor_2,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+eoq_missing_factor_2,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+eoq_missing_factor_2,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+eoq_missing_factor_2,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+eoq_missing_factor_2,c11_croston_vs_definition,True,max abs difference 2.22e-15
+eoq_missing_factor_2,c12_reorder_point_composition,True,max relative difference 1.05e-15
+eoq_missing_factor_2,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+eoq_missing_factor_2,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+eoq_monthly_demand,c01_ppf_published_constants,True,max abs error 7.99e-15
+eoq_monthly_demand,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+eoq_monthly_demand,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+eoq_monthly_demand,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+eoq_monthly_demand,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0056
+eoq_monthly_demand,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+eoq_monthly_demand,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+eoq_monthly_demand,c07_eoq_vs_brute_force_search,False,30 of 30 random cases more than 1 unit from the brute-force optimum
+eoq_monthly_demand,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+eoq_monthly_demand,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+eoq_monthly_demand,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+eoq_monthly_demand,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+eoq_monthly_demand,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+eoq_monthly_demand,c11_croston_vs_definition,True,max abs difference 2.22e-15
+eoq_monthly_demand,c12_reorder_point_composition,True,max relative difference 1.05e-15
+eoq_monthly_demand,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+eoq_monthly_demand,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+round_down_to_pack,c01_ppf_published_constants,True,max abs error 7.99e-15
+round_down_to_pack,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+round_down_to_pack,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+round_down_to_pack,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+round_down_to_pack,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0056
+round_down_to_pack,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+round_down_to_pack,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+round_down_to_pack,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+round_down_to_pack,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+round_down_to_pack,c08b_cost_rounding_is_cheapest_feasible,False,31 of 60 results dearer than the cheapest feasible quantity
+round_down_to_pack,c08c_up_rounding_is_smallest_feasible_at_or_above,False,60 of 60 results differ from the smallest feasible quantity at or above the request
+round_down_to_pack,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+round_down_to_pack,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+round_down_to_pack,c11_croston_vs_definition,True,max abs difference 2.22e-15
+round_down_to_pack,c12_reorder_point_composition,True,max relative difference 1.05e-15
+round_down_to_pack,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+round_down_to_pack,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+moq_ignored,c01_ppf_published_constants,True,max abs error 7.99e-15
+moq_ignored,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+moq_ignored,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+moq_ignored,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+moq_ignored,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0056
+moq_ignored,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+moq_ignored,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+moq_ignored,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+moq_ignored,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+moq_ignored,c08b_cost_rounding_is_cheapest_feasible,False,26 of 60 results dearer than the cheapest feasible quantity
+moq_ignored,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+moq_ignored,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+moq_ignored,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+moq_ignored,c11_croston_vs_definition,True,max abs difference 2.22e-15
+moq_ignored,c12_reorder_point_composition,True,max relative difference 1.05e-15
+moq_ignored,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+moq_ignored,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+fill_rate_not_scaled_by_Q,c01_ppf_published_constants,True,max abs error 7.99e-15
+fill_rate_not_scaled_by_Q,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+fill_rate_not_scaled_by_Q,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+fill_rate_not_scaled_by_Q,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+fill_rate_not_scaled_by_Q,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0056
+fill_rate_not_scaled_by_Q,c05_fill_rate_formula_vs_monte_carlo,False,72 of 72 outside tolerance; worst deviation 247.97x tolerance
+fill_rate_not_scaled_by_Q,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+fill_rate_not_scaled_by_Q,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+fill_rate_not_scaled_by_Q,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+fill_rate_not_scaled_by_Q,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+fill_rate_not_scaled_by_Q,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+fill_rate_not_scaled_by_Q,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+fill_rate_not_scaled_by_Q,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+fill_rate_not_scaled_by_Q,c11_croston_vs_definition,True,max abs difference 2.22e-15
+fill_rate_not_scaled_by_Q,c12_reorder_point_composition,True,max relative difference 1.05e-15
+fill_rate_not_scaled_by_Q,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+fill_rate_not_scaled_by_Q,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+loss_function_wrong_sign,c01_ppf_published_constants,True,max abs error 7.99e-15
+loss_function_wrong_sign,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+loss_function_wrong_sign,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+loss_function_wrong_sign,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+loss_function_wrong_sign,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0056
+loss_function_wrong_sign,c05_fill_rate_formula_vs_monte_carlo,False,48 of 72 outside tolerance; worst deviation 16.63x tolerance
+loss_function_wrong_sign,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+loss_function_wrong_sign,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+loss_function_wrong_sign,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+loss_function_wrong_sign,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+loss_function_wrong_sign,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+loss_function_wrong_sign,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+loss_function_wrong_sign,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+loss_function_wrong_sign,c11_croston_vs_definition,True,max abs difference 2.22e-15
+loss_function_wrong_sign,c12_reorder_point_composition,True,max relative difference 1.05e-15
+loss_function_wrong_sign,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+loss_function_wrong_sign,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+ses_alpha_swapped,c01_ppf_published_constants,True,max abs error 7.99e-15
+ses_alpha_swapped,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+ses_alpha_swapped,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+ses_alpha_swapped,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+ses_alpha_swapped,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0056
+ses_alpha_swapped,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+ses_alpha_swapped,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+ses_alpha_swapped,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+ses_alpha_swapped,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+ses_alpha_swapped,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+ses_alpha_swapped,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+ses_alpha_swapped,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+ses_alpha_swapped,c10_ses_vs_closed_form,False,max abs difference 1.61e+01
+ses_alpha_swapped,c11_croston_vs_definition,True,max abs difference 2.22e-15
+ses_alpha_swapped,c12_reorder_point_composition,True,max relative difference 1.05e-15
+ses_alpha_swapped,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+ses_alpha_swapped,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+croston_counts_zeros_not_intervals,c01_ppf_published_constants,True,max abs error 7.99e-15
+croston_counts_zeros_not_intervals,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+croston_counts_zeros_not_intervals,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+croston_counts_zeros_not_intervals,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+croston_counts_zeros_not_intervals,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0056
+croston_counts_zeros_not_intervals,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+croston_counts_zeros_not_intervals,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+croston_counts_zeros_not_intervals,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+croston_counts_zeros_not_intervals,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+croston_counts_zeros_not_intervals,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+croston_counts_zeros_not_intervals,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+croston_counts_zeros_not_intervals,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+croston_counts_zeros_not_intervals,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+croston_counts_zeros_not_intervals,c11_croston_vs_definition,False,max abs difference 2.28e+00
+croston_counts_zeros_not_intervals,c12_reorder_point_composition,True,max relative difference 1.05e-15
+croston_counts_zeros_not_intervals,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+croston_counts_zeros_not_intervals,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+rop_forgets_safety_stock,c01_ppf_published_constants,True,max abs error 7.99e-15
+rop_forgets_safety_stock,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+rop_forgets_safety_stock,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+rop_forgets_safety_stock,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+rop_forgets_safety_stock,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0056
+rop_forgets_safety_stock,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+rop_forgets_safety_stock,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+rop_forgets_safety_stock,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+rop_forgets_safety_stock,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+rop_forgets_safety_stock,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+rop_forgets_safety_stock,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+rop_forgets_safety_stock,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+rop_forgets_safety_stock,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+rop_forgets_safety_stock,c11_croston_vs_definition,True,max abs difference 2.22e-15
+rop_forgets_safety_stock,c12_reorder_point_composition,False,max relative difference 7.40e-01
+rop_forgets_safety_stock,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+rop_forgets_safety_stock,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+rop_lead_time_in_weeks,c01_ppf_published_constants,True,max abs error 7.99e-15
+rop_lead_time_in_weeks,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+rop_lead_time_in_weeks,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+rop_lead_time_in_weeks,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+rop_lead_time_in_weeks,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0056
+rop_lead_time_in_weeks,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+rop_lead_time_in_weeks,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+rop_lead_time_in_weeks,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+rop_lead_time_in_weeks,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+rop_lead_time_in_weeks,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+rop_lead_time_in_weeks,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+rop_lead_time_in_weeks,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+rop_lead_time_in_weeks,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+rop_lead_time_in_weeks,c11_croston_vs_definition,True,max abs difference 2.22e-15
+rop_lead_time_in_weeks,c12_reorder_point_composition,False,max relative difference 8.55e-01
+rop_lead_time_in_weeks,c13_abc_vs_independent_implementation,True,0 of 20 random value sets classified differently
+rop_lead_time_in_weeks,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"
+abc_inclusive_share,c01_ppf_published_constants,True,max abs error 7.99e-15
+abc_inclusive_share,c02_ppf_round_trip,True,max |cdf(ppf(p)) - p| = 2.22e-16
+abc_inclusive_share,c03_lead_time_sd_vs_monte_carlo,True,worst relative error 0.0050 over 24 cases
+abc_inclusive_share,c04a_cycle_service_vs_monte_carlo_fixed_lead_time,True,"0 of 36 (case, level) pairs outside 4 standard errors; worst deviation 0.44x tolerance"
+abc_inclusive_share,c04b_cycle_service_vs_monte_carlo_random_lead_time,True,0 of 36 outside 0.01; worst |achieved - target| = 0.0056
+abc_inclusive_share,c05_fill_rate_formula_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.29x tolerance
+abc_inclusive_share,c06_fill_rate_sizing_vs_monte_carlo,True,0 of 72 outside tolerance; worst deviation 0.33x tolerance
+abc_inclusive_share,c07_eoq_vs_brute_force_search,True,0 of 30 random cases more than 1 unit from the brute-force optimum
+abc_inclusive_share,c08a_rounding_is_feasible,True,0 of 60 results not a multiple of the pack size or below the minimum
+abc_inclusive_share,c08b_cost_rounding_is_cheapest_feasible,True,0 of 60 results dearer than the cheapest feasible quantity
+abc_inclusive_share,c08c_up_rounding_is_smallest_feasible_at_or_above,True,0 of 60 results differ from the smallest feasible quantity at or above the request
+abc_inclusive_share,c09_exact_poisson_where_normal_is_adequate,True,worst |exact service level - target| = 0.0234 for lambda*L >= 50 (limit 0.03)
+abc_inclusive_share,c10_ses_vs_closed_form,True,max abs difference 3.55e-15
+abc_inclusive_share,c11_croston_vs_definition,True,max abs difference 2.22e-15
+abc_inclusive_share,c12_reorder_point_composition,True,max relative difference 1.05e-15
+abc_inclusive_share,c13_abc_vs_independent_implementation,False,20 of 20 random value sets classified differently
+abc_inclusive_share,c14_safety_stock_monotonicity,True,"service level, lead time, lead-time variability and demand variability each raise the requirement"

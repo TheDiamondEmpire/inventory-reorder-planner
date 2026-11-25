@@ -1,0 +1,19 @@
+{
+  "cpu_load_pct_at_start": 85.1,
+  "experiment": "e3",
+  "implementation": "CPython",
+  "irp_version": "0.1.0",
+  "logical_cpus": 8,
+  "machine": "AMD64",
+  "mc_cases": 24,
+  "mc_draws_per_case": 200000,
+  "mutants_caught": 17,
+  "mutants_total": 17,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "product_checks_failed": [],
+  "python": "3.12.13",
+  "seed": 20260101,
+  "started_utc": "2026-11-24T20:36:47Z",
+  "tolerance": "fixed lead time: 4 standard errors (+0.0003); random lead time: absolute 0.01; fill rate: 4 standard errors of the shortage + 0.0015",
+  "wall_seconds": 363.3
+}

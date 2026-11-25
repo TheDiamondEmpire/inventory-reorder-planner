@@ -1,0 +1,34 @@
+{
+  "cpu_load_pct_at_start": 45.0,
+  "experiment": "e1",
+  "horizons": [
+    1,
+    4
+  ],
+  "implementation": "CPython",
+  "initial_training_weeks": 104,
+  "irp_version": "0.1.0",
+  "logical_cpus": 8,
+  "machine": "AMD64",
+  "methods": [
+    "naive",
+    "moving_average",
+    "ses",
+    "seasonal_naive",
+    "croston",
+    "croston_sba"
+  ],
+  "patterns": [
+    "smooth",
+    "seasonal",
+    "trending",
+    "intermittent",
+    "lumpy"
+  ],
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.13",
+  "seeds": 60,
+  "started_utc": "2026-11-24T20:27:44Z",
+  "wall_seconds": 29.6,
+  "weeks": 169
+}

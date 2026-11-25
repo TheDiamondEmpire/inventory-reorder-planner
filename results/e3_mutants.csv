@@ -1,0 +1,18 @@
+mutant,description,caught,failing_checks
+ss_ignores_lead_time_variance,lead-time variability left out: sigma_LT = sd*sqrt(L),True,c03_lead_time_sd_vs_monte_carlo;c04b_cycle_service_vs_monte_carlo_random_lead_time;c14_safety_stock_monotonicity
+ss_sigma_times_L,demand variability scaled by L instead of sqrt(L),True,c03_lead_time_sd_vs_monte_carlo;c04a_cycle_service_vs_monte_carlo_fixed_lead_time;c04b_cycle_service_vs_monte_carlo_random_lead_time;c09_exact_poisson_where_normal_is_adequate
+ss_adds_instead_of_quadrature,the two variability terms are added instead of combined in quadrature,True,c03_lead_time_sd_vs_monte_carlo;c04b_cycle_service_vs_monte_carlo_random_lead_time
+ss_wrong_tail,z taken from 1 - service level,True,c04a_cycle_service_vs_monte_carlo_fixed_lead_time;c04b_cycle_service_vs_monte_carlo_random_lead_time;c09_exact_poisson_where_normal_is_adequate;c14_safety_stock_monotonicity
+ss_z_rounded_to_one_decimal,z rounded to one decimal place,True,c04a_cycle_service_vs_monte_carlo_fixed_lead_time;c04b_cycle_service_vs_monte_carlo_random_lead_time
+ppf_logistic_approximation,inverse normal replaced by a crude logistic approximation,True,c01_ppf_published_constants;c02_ppf_round_trip;c04a_cycle_service_vs_monte_carlo_fixed_lead_time
+eoq_missing_factor_2,EOQ = sqrt(D*K/h) (factor 2 missing),True,c07_eoq_vs_brute_force_search
+eoq_monthly_demand,EOQ computed from monthly instead of yearly demand,True,c07_eoq_vs_brute_force_search
+round_down_to_pack,quantities rounded down to the pack size,True,c08b_cost_rounding_is_cheapest_feasible;c08c_up_rounding_is_smallest_feasible_at_or_above
+moq_ignored,minimum order quantity ignored,True,c08b_cost_rounding_is_cheapest_feasible
+fill_rate_not_scaled_by_Q,fill rate = 1 - G(z) (sigma/Q scaling missing),True,c05_fill_rate_formula_vs_monte_carlo
+loss_function_wrong_sign,normal loss function with the wrong sign,True,c05_fill_rate_formula_vs_monte_carlo
+ses_alpha_swapped,smoothing constant and its complement swapped,True,c10_ses_vs_closed_form
+croston_counts_zeros_not_intervals,Croston interval counts the zeros between demands instead of the interval,True,c11_croston_vs_definition
+rop_forgets_safety_stock,reorder point = lead-time demand only,True,c12_reorder_point_composition
+rop_lead_time_in_weeks,lead time converted to weeks but demand kept per day,True,c12_reorder_point_composition
+abc_inclusive_share,ABC thresholds applied to the cumulative share including the item,True,c13_abc_vs_independent_implementation

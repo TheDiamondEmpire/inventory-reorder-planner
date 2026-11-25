@@ -1,0 +1,35 @@
+{
+  "cpu_load_after_pct": 93.4,
+  "cpu_load_pct_at_start": 100.0,
+  "experiment": "e4",
+  "implementation": "CPython",
+  "irp_version": "0.1.0",
+  "items": 40,
+  "levels": [
+    1,
+    4,
+    8
+  ],
+  "logical_cpus": 8,
+  "machine": "AMD64",
+  "mix": {
+    "api_import_validate": 5,
+    "api_item": 10,
+    "api_items": 10,
+    "api_movement": 5,
+    "ui_dashboard": 15,
+    "ui_item": 20,
+    "ui_items": 15,
+    "ui_pos": 5,
+    "ui_reports": 5,
+    "ui_suggestions": 10
+  },
+  "note": "load generator and server share one host; the machine was not idle",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.13",
+  "reps": 5,
+  "seconds": 8,
+  "started_utc": "2026-11-24T20:42:52Z",
+  "wall_seconds": 215.0,
+  "warmup_s": 1.5
+}

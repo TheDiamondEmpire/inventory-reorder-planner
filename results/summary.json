@@ -1,0 +1,180 @@
+{
+  "e1": {
+    "intermittent_h1": {
+      "best": "croston_sba",
+      "mae_best": 3.8233363964966016,
+      "tied": [],
+      "worse": [
+        "naive",
+        "moving_average",
+        "ses",
+        "seasonal_naive",
+        "croston"
+      ]
+    },
+    "intermittent_h4": {
+      "best": "croston_sba",
+      "mae_best": 3.8375370737958057,
+      "tied": [],
+      "worse": [
+        "naive",
+        "moving_average",
+        "ses",
+        "seasonal_naive",
+        "croston"
+      ]
+    },
+    "lumpy_h1": {
+      "best": "croston_sba",
+      "mae_best": 6.779429339818096,
+      "tied": [],
+      "worse": [
+        "naive",
+        "moving_average",
+        "ses",
+        "seasonal_naive",
+        "croston"
+      ]
+    },
+    "lumpy_h4": {
+      "best": "croston_sba",
+      "mae_best": 6.786992652962365,
+      "tied": [],
+      "worse": [
+        "naive",
+        "moving_average",
+        "ses",
+        "seasonal_naive",
+        "croston"
+      ]
+    },
+    "seasonal_h1": {
+      "best": "ses",
+      "mae_best": 6.52110854806824,
+      "tied": [],
+      "worse": [
+        "naive",
+        "moving_average",
+        "seasonal_naive",
+        "croston",
+        "croston_sba"
+      ]
+    },
+    "seasonal_h4": {
+      "best": "seasonal_naive",
+      "mae_best": 7.176041666666666,
+      "tied": [],
+      "worse": [
+        "naive",
+        "moving_average",
+        "ses",
+        "croston",
+        "croston_sba"
+      ]
+    },
+    "smooth_h1": {
+      "best": "ses",
+      "mae_best": 5.274356413860882,
+      "tied": [],
+      "worse": [
+        "naive",
+        "moving_average",
+        "seasonal_naive",
+        "croston",
+        "croston_sba"
+      ]
+    },
+    "smooth_h4": {
+      "best": "ses",
+      "mae_best": 5.266589212344149,
+      "tied": [
+        "croston"
+      ],
+      "worse": [
+        "naive",
+        "moving_average",
+        "seasonal_naive",
+        "croston_sba"
+      ]
+    },
+    "trending_h1": {
+      "best": "ses",
+      "mae_best": 7.665118808549156,
+      "tied": [],
+      "worse": [
+        "naive",
+        "moving_average",
+        "seasonal_naive",
+        "croston",
+        "croston_sba"
+      ]
+    },
+    "trending_h4": {
+      "best": "ses",
+      "mae_best": 7.756676397357893,
+      "tied": [],
+      "worse": [
+        "naive",
+        "moving_average",
+        "seasonal_naive",
+        "croston",
+        "croston_sba"
+      ]
+    }
+  },
+  "e2": {
+    "cost_ties": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "csl": {
+      "below target": 9,
+      "consistent with target": 6
+    },
+    "fill_basis_closer_cells": [
+      8,
+      15
+    ],
+    "match": {
+      "cycle": {
+        "above target": 31,
+        "below target": 6,
+        "consistent with target": 8
+      },
+      "fill": {
+        "above target": 2,
+        "below target": 10,
+        "consistent with target": 3
+      }
+    }
+  },
+  "e3": {
+    "mutants_caught": 17,
+    "mutants_total": 17,
+    "product_failed": [],
+    "uncaught": []
+  },
+  "e4": {
+    "1": {
+      "errors": 0,
+      "median_rps": 11.0
+    },
+    "4": {
+      "errors": 0,
+      "median_rps": 13.25
+    },
+    "8": {
+      "errors": 0,
+      "median_rps": 16.88
+    }
+  }
+}

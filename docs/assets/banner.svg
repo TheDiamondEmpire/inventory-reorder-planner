@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="t d">
+  <title id="t">Inventory &amp; Reorder Planner</title>
+  <desc id="d">A local planner that shows what to order, when and how much, for small retailers and workshops.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#000000"/><stop offset="1" stop-color="#000624"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ff2da0" stop-opacity="0.28"/><stop offset="1" stop-color="#ff2da0" stop-opacity="0"/></radialGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff2da0"/><stop offset="1" stop-color="#ff2da0" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="1280" height="400" fill="url(#bg)"/>
+  <circle cx="1020" cy="205" r="250" fill="url(#glow)"/>
+  <g fill="none" stroke="#ff2da0" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity="0.55">
+    <line x1="885" y1="110" x2="885" y2="330"/><line x1="885" y1="330" x2="1165" y2="330"/>
+    <polyline points="885,150 945,270 945,150 1005,270 1005,150 1065,270 1065,150 1125,270"/>
+    <line x1="885" y1="225" x2="1165" y2="225" stroke-dasharray="8 8"/>
+    <polyline points="1150,196 1150,225"/><polyline points="1142,215 1150,225 1158,215"/>
+    <rect x="905" y="286" width="26" height="30" rx="3"/><rect x="940" y="286" width="26" height="30" rx="3"/><rect x="975" y="296" width="26" height="20" rx="3"/>
+  </g>
+  <g fill="none" stroke="#d6dee4" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" opacity="0.35">
+    <polygon points="1196,52 1226,52 1241,67 1211,100 1181,67"/>
+    <line x1="1181" y1="67" x2="1241" y2="67"/><line x1="1196" y1="52" x2="1201" y2="67"/><line x1="1226" y1="52" x2="1221" y2="67"/>
+    <line x1="1201" y1="67" x2="1211" y2="100"/><line x1="1221" y1="67" x2="1211" y2="100"/>
+  </g>
+  <g fill="none" stroke="#ffdded" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" opacity="0.3">
+    <polygon points="842,318 866,318 878,330 854,356 830,330"/>
+    <line x1="830" y1="330" x2="878" y2="330"/><line x1="842" y1="318" x2="846" y2="330"/><line x1="866" y1="318" x2="862" y2="330"/>
+    <line x1="846" y1="330" x2="854" y2="356"/><line x1="862" y1="330" x2="854" y2="356"/>
+  </g>
+  <rect width="1280" height="6" fill="url(#bar)"/>
+  <text x="80" y="64" font-family="Georgia, 'Times New Roman', serif" font-size="20" letter-spacing="6" fill="#ff2da0">THE DIAMOND EMPIRE · BUSINESS TRACK</text>
+  <text x="80" y="132" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#ffdded">Inventory &amp;</text>
+  <text x="80" y="190" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#ffdded">Reorder</text>
+  <text x="80" y="248" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#ffdded">Planner</text>
+  <text x="80" y="304" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#d6dee4">What to order, when and how much, for small</text>
+  <text x="80" y="342" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#d6dee4">retailers and workshops. Runs locally.</text>
+  <text x="80" y="372" font-family="Georgia, 'Times New Roman', serif" font-size="15" letter-spacing="3" fill="#d6dee4" opacity="0.55">github.com/TheDiamondEmpire</text>
+</svg>
